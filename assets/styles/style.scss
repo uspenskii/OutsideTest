@@ -1,0 +1,62 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  src: url("..//fonts/LabGrotesque-Regular.woff") format("woff"),
+    url("..//fonts/LabGrotesque-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 500;
+  src: url("..//fonts/LabGrotesque-Medium.woff") format("woff"),
+    url("..//fonts/LabGrotesque-Medium.woff2") format("woff2");
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+  font-family: "Lab Grotesque", sans-serif;
+}
+
+/* Reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.vm--modal {
+  border-radius: 30px !important;
+  height: fit-content !important;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1) !important;
+  background-color: #fff !important;
+}
+
+@media (max-width: 375px) {
+  .vm--modal {
+    border-radius: 0 !important;
+    height: 100vh !important;
+    overflow-y: scroll !important;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: ease opacity 0.3s, ease transform 0.3s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
